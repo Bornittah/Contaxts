@@ -3,29 +3,40 @@
 <head>
 	<title>Contaxt</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body class="body">
-
 	<div class="form-div">
-			<h1 class="heading1">CONTAXTS</h1>
-		<form class="form wid-45">
+			
+			<div class="error"></div>
+			<!--  action="account_setting.html" -->
+		<form class="form wid-45" method="POST">
+			<h1 class="heading1">CONTAXT</h1>
 		<div><h1 class="heading2">Sign Up Form</h1></div>
-		
-		<div><input type="text" class="input" name="fullName" placeholder="Full Name"></div>
-		<div><input type="text" class="input" name="phone" placeholder="Phone Number"></div>
-		<div><input type="text" class="input" name="city" placeholder="City"></div>
-		<div><input type="text" class="input" name="country" placeholder="Country"></div>
-		<div><input type="text" class="input" name="email" placeholder="Email"></div>
-		<div><input type="text" class="input" name="password" placeholder="Password"></div>
-		<div><input type="text" class="input" name="password" placeholder="Confirm Password"></div>
-		<div><input type="submit" class="submit_btn" name="signup" placeholder="Sign Up"></div>
+		<div class="profile_pic ">
+			<img src="images/phone.jpg" id="photo">
+			<input type="file" name="profilepic" id="file">
+			<label for="file" class="uploadpic" id="uploadpic">Choose photo</label>
+		</div>
+		<div><input type="text" class="input" id="fullName" placeholder="Full Name"  ></div>
+		<div><input type="text" class="input" id="phone" placeholder="Phone Number" ></div>
+		<div><input type="text" class="input" id="city" placeholder="City"></div>
+		<div><input type="text" class="input" id="country" placeholder="Country"></div>
+		<div><input type="text" class="input" id="email" placeholder="Email"></div>
+		<div><input type="text" class="input" id="password" placeholder="Password"></div>
+		<div><input type="text" class="input" id="confirmpassword" placeholder="Confirm Password"></div>
+		<div><input type="submit" class="submit_btn" id="signup" placeholder="Sign Up" onclick="submit_signup()"></div>
 		<div class="div">
-			<p>Or Sign up with</p><br>
-			<a href="">Google Account</a> |
+			<p>Or Sign up with: </p>
+			<a href="">Google Account</a> | 
 			<a href="">Facebook</a>
 		</div>
+		<a href="index.html" class="backtologin">Back to login</a>
+		
 	</form>
 	</div>
+
+	<script type="text/javascript" src="js/javascript.js"></script>
 </body>
 </html>

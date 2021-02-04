@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contaxts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+</head>
+<body class="body">
+		<div class="content">
+		<div>
+			<input class="searchbar" onkeyup ="search_function()" autofocus="on" type="text" id="searchcontacts" placeholder="Search...">
+	   </div>
+	<div id="mycontactlist">
+		<p id="noContacts" style="display:none;">No contacts found!</p>
+	</div>
+	</div>
+	<script type="text/javascript">
+		window.addEventListener('load',()=>{
+		var cont=JSON.parse(localStorage.getItem('Contacts'));
+		var cl = document.querySelector('#mycontactlist');
+			if(cont.length>0){
+				var append = '<table id="contactslists">';
+				for (var i = 0; i < cont.length; i++) {
+					append += `<tr class="contactlist-items"><td>
+					<img class="profile-pic-list" src="${cont[i].Profile}"> ${cont[i].Name}
+					</td></tr>`;
+					console.log(cont[i].Name);
+				}
+				cl.innerHTML =append+"</table>";
+			}else {
+				// no contacts
+					document.querySelector("#noContacts").style.display="block";
+			}
+			
+
+		});
+	</script>
+<script type="text/javascript" src="js/javascript.js"></script>
+
+</body>
+</html>
