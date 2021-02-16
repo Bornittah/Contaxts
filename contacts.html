@@ -10,21 +10,20 @@
 <body class="body">
 	<div class="content">
 	<div style="background-color: #1b75bc;">
-	<section><h1 class="heading1">CONTAXT</h1></section>
+	<section><h1 class="heading1">CONTAXTS</h1></section>
 	<!-- top bar menu -->
 	<div class="navbar">
 		<a href="contacts.html"  class="nav-items">Contacts</a>
-		<a href="#"  class="nav-items">Favourites</a>
+		<a href="favourites.html"  class="nav-items">Favourites</a>
 		<a href="search.html" class="nav-items opensearch"><img src="images/search-icon.jpg" style="width: 30px"></a>
-		<!-- <a href="#"  class="nav-items"><input type="checkbox"></a> -->
 		<a href="#" onclick="profile_menu();" class="nav-items"><img src="images/phone.jpg" style="width:60px; border-radius:50%; background-color:#6838;"></a>
 	</div>
    <!-- profile menu -->
    <div class="profile-menu">
    	<span class="close_profile_menu">&times;</span>
 		<ul class="user-profile">
-		<li><a href="#" onclick="myprofile()"  class="">My profile</a></li>
-		<li><a href="" class="">Logout</a></li>
+		<li><a href="#" onclick="myprofile()" class="">My profile</a></li>
+		<li><a href="index.html" class="logout">Logout</a></li>
 		</ul>
 	</div>
 	</div>
@@ -57,7 +56,8 @@
 			<div><input class="modal-content-elmnts" type="text" name="" id="cont_address" placeholder="Address"></div>
 			<div><input class="modal-content-elmnts" type="date" name=""id="cont_birthday" placeholder="Birthday"></div>
 			<div id="outer">
-				<input class="inner" type="submit"name="" id="cont_save" onclick="savecontact()" value="Add contact">
+				<input class="inner" type="submit"name="" id="cont_save"  value="Add contact">
+				<input class="inner" type="button"name="" id="update_contact"  value="Update">
 			</div>
 			
 		</form>
@@ -93,13 +93,12 @@
 			<tr><td>Full Name:</td><td id="profile_name"></td></tr>
 			<tr><td>Phone number:</td><td id="profile_phone"></td></tr>
 			<tr><td>Email:</td><td id="profile_email"></td></tr>
-			<tr><td>City:</td><td id="profile_city"></td></tr>
-			<tr><td>Country:</td><td id="profile_country"></td></tr>
 			<tr><td>Password:</td><td><input type="password" name="" id="profile_password" value=""></td></tr>
 		</table>
 	</div>
 
 	</div>
 <script type="text/javascript" src="js/javascript.js"></script>
+<script type="text/javascript" src="js/profile.js"></script>
 </body>
 </html>

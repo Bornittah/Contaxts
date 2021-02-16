@@ -3,26 +3,30 @@
 <head>
 	<title>Contaxt</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/login_page.css">
+	<!-- <script type="text/javascript" src="js/login.js"></script> -->
 </head>
 <body class="body">
-
-	<div class="form-div ">
-		<form class="form wid-25" method="POST">
-			<h1 class="heading1">CONTAXTS</h1>
-		<div><h2 class="heading2">Login</h2></div>
-		<div id="login_error" style="background-color: #638def"></div>
-		<div><input type="text" class="input" id="email" placeholder="Email" autofocus="on" required></div>
-		<div><input type="text" class="input" id="password" placeholder="Password" required></div>
-		<div><input type="submit" class="submit_btn" id="login" onclick="loginUser()" placeholder="Login"></div>
-		<div>
-			<div>
-				<a href="">Forgot password?</a> |
-				<a href="register.html">Sign up</a>
-			</div>
+	<div class="row">
+		<div class="form-div ">
+                <form class="form"  method="GET" id="login_form">
+					<h1 class="heading1">CONTAXTS</h1>
+					<p>Keep track of contact information of people<br> in your circle eg phone numbers with this app</p>
+					<div class="line"></div>
+					<div><p >Login to access your account</p></div>
+					<div><p id="login_error" style="color:#f70e0e"></p></div>
+					<div><input type="text" class="input" id="email" placeholder="Email" autofocus="on" ></div>
+					<div><input type="password" class="input" id="password" placeholder="Password" ></div>
+					<div><input type="submit" class="submit_btn" onclick="loginUser();" id="loginbutton" value="Login"></div>
+					<div>
+						<div style="padding-top: 20px; padding-bottom: 20px;">
+							<a href="">Forgot password?</a> |
+							<a href="register.html">Sign up</a>
+						</div>
+					</div>
+		</form>
 		</div>
-	</form>
 	</div>
-	<script type="text/javascript" src="js/javascript.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>

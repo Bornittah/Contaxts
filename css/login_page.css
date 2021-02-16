@@ -1,0 +1,113 @@
+
+
+
+.body{
+    margin: 20px;
+    font-family: "Tw Cen MT", sans-serif;
+    background-image: url("images/phone.jpg");
+}
+* {
+    box-sizing: border-box;
+}
+.row{
+    /* box-sizing: border-box; */
+    width: 50%;
+    margin: 0 auto;
+    top: auto;
+    height: 80%;
+    display:block;
+
+}
+.line{
+    height:1px; background-color: beige; width: 60%; margin: auto;
+}
+.first-col{
+    float: left;
+    width: 40%;
+    text-align: center;
+    height: 100%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+.form{
+	height: auto;
+	position: relative;
+	box-sizing: border-box;
+	background-color: #1b75bc;
+	display: inline-block;
+	margin: auto 0;
+    color: #fff;
+    width: 80%;
+    height: 30%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}  
+.form-div{
+display: block;
+text-align: center;
+margin: 0 auto;
+}
+.heading1{
+    color: #ffff;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    font-family: "Tw Cen MT", sans-serif;
+    font-size: 25pt;
+}
+.heading2{
+	color: #ffff;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    font-family: "Tw Cen MT", serif;
+    font-size: 24pt;
+}
+
+.input{
+			height: 40px;
+			width: 75%;
+			padding: 12px;
+			margin-bottom: 5px;
+			border-collapse: collapse;
+			border:none;
+			outline: none;
+			border: none;
+			color: #1b75bc;
+			border-top: 0;
+		}
+		
+		.submit_btn{
+            width: 25%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+			border:none;
+			border-radius: 7px;
+			border-collapse: collapse;
+			text-align: center;
+        }
+        .submit_btn hover {
+            background-color: #f58a25;
+            color: white;
+        }
+		.div{
+			padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 0 auto;
+            
+        }
+        a:link {
+            color: white;
+            font-size: 14pt;
+            text-decoration: none;
+        }
+       
+    a:hover {
+        color: #f58a25;
+    }
+    
+    a:active {
+        color: white;
+            font-size: 14pt;
+            text-decoration: none;
+    } 
