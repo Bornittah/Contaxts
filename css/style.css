@@ -2,6 +2,7 @@
 			margin: 20px;
 			font-family: "Tw Cen MT", sans-serif;
 		}
+
 		.heading1{
 			color: #ffff;
 			text-shadow: 1px 1px 2px #000000;
@@ -10,6 +11,7 @@
 			font-size: 25pt;
 			padding-top: 15px;
 		}
+
 		.heading2{
 			color: #ffff;
 			text-shadow: 1px 1px 2px #000000;
@@ -17,6 +19,7 @@
 			font-family: "Tw Cen MT", serif;
 			font-size: 24pt;
 		}
+
 		.navbar{
 			width: 100%;
 	/*		background-color: #1b75bc;*/
@@ -26,6 +29,7 @@
 			height: 50px;
 
 		}
+
 		.nav-items{
 			flex: 1;
 			color: white;
@@ -39,9 +43,6 @@
 			color: white;
 			font-size: 14pt;
 		}
-		/* a:visited {
-			color: #049df5;
-		} */
 		
 		a:hover {
 			color: #f58a25;
@@ -50,6 +51,7 @@
 		a:active {
 			color: blue;
 		}
+
 		.profile_pic{
 			height: 180px;
 			width: 180px;
@@ -62,16 +64,19 @@
 			background-size: 100% 100%;
 
 		}
+
 		#photo{
 			border-radius: 50%;
 			height: 100%;
 			width: 100%;
 			overflow: hidden;
 		}
+
 		#file{
 			display: none;
 			
 			}
+
 	.uploadpic{
 		height: 45px;
 		width:100%;
@@ -87,6 +92,7 @@
 		outline: none;
 		box-sizing: border-box;
 	}
+
 /*	create a modal*/
 .modal {
     display: none; 
@@ -108,6 +114,7 @@
     width: 100%;
   
 }
+
 .modal-content-elmnts{
 	outline: none;
     box-sizing: border-box;
@@ -131,6 +138,7 @@
     text-decoration: none;
     cursor: pointer;
 }
+
 .content{
 	width: 55%;
 	height: 95%;
@@ -142,6 +150,7 @@
 	border-width: 2px;
 	
 }
+
 /*searchbar*/
 .searchbar{
 	width: 85%;
@@ -152,12 +161,14 @@
 	margin-top: 20px;
 	
 }
+
 /*buttons*/
 #outer
 {
     width:100%;
     text-align: center;
 }
+
 .inner
 {
     display: inline-block;
@@ -167,6 +178,7 @@
     width: 100px;
 
 }
+
 .addcontact-btn{
  border-radius: 50%;
   background-color: #1b75bc;
@@ -182,14 +194,17 @@
   right:25%;
   bottom: 5%;
 }
+
 button:hover {
 	background-color: #f58a25;
 	color: white;
 }
+
 button:focus{
 	border-color:transparent;
 	outline:none;
    }
+
 /*contact list*/
 .contactlist-items{
 	height: 3%;
@@ -207,6 +222,7 @@ button:focus{
   width: 75px;
   margin-left: 10px;
 }
+
 #profileImage-letter {
   font-family: Arial, Helvetica, sans-serif;
   width: 10rem;
@@ -219,6 +235,7 @@ button:focus{
   line-height: 10rem;
   margin: 2rem 0;
 }
+
 .selectcontacts{
  text-decoration: none;
   display: inline-block;
@@ -236,6 +253,7 @@ text-decoration: none;
   right:25%;
   text-align: center;
 }
+
 /*bottom links on each contact*/
 .bottom-navbar{
 	 background-color: #333;
@@ -244,8 +262,8 @@ text-decoration: none;
 	  bottom: 0;
 	  display: flex;
 	  left: 0;
-
 		}
+
 		.bottom-nav-items{
 		  flex: 0.5;
 		  text-decoration:none;
@@ -257,6 +275,7 @@ text-decoration: none;
 		  text-decoration: none;
 		  font-size: 12px;
 		}
+
 		.each-contact{
 			top: 22%;
 			left: 50%;
@@ -265,6 +284,7 @@ text-decoration: none;
 			margin: 0 auto;
 			display: none; 
 		}
+
 		.popup-contact{
 			background-color:rgb(230, 220, 220);
 			justify-content: center;
@@ -276,6 +296,7 @@ text-decoration: none;
 			padding: 10px;
 			width: 350px;
 		}
+
 		.profile{
 			border-radius: 50%;
 			width: 100px;
@@ -283,6 +304,7 @@ text-decoration: none;
 			align-items: center;
 			display:block;
 		}
+
 		.close-popup {
     color: rgb(248, 244, 244);
     float: right;
@@ -292,7 +314,6 @@ text-decoration: none;
     cursor: pointer;
 }
 
-    
 	/*	account settings*/
 	.user-profile{
 		list-style: none;
@@ -304,10 +325,12 @@ text-decoration: none;
 		right: 0;
 
 	}
+
 	.user-profile li{
 		padding: 5px 0;
 		
 	}
+
 	a:link {
 		color: white;
 		font-size: 14pt;
@@ -331,6 +354,7 @@ a:active {
 		background-color:#ADD8E6;
 		text-decoration: none;
 	}
+
 	.show-user-profile{
 		display: none;
 		/*width: 50%;*/
@@ -342,6 +366,7 @@ a:active {
 		margin: 0 auto;
 		padding: 20px;
 	}
+
 /*	close profile menu*/
 		.close_profile_menu {
     color: #aaa;
@@ -351,6 +376,7 @@ a:active {
     text-decoration: none;
     cursor: pointer;
 }
+
 /*close user account details*/
 		.close_userdetails {
     color: #aaa;
@@ -360,6 +386,7 @@ a:active {
     text-decoration: none;
     cursor: pointer;
 }
+
 /*remove favourite button*/
 .removeFavourite{
 	border-radius: 50%;
