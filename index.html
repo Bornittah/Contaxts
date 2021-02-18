@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contaxt</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/login_page.css">
+	
+</head>
+<body class="body">
+	<div class="row">
+		<div class="form-div ">
+                <form class="form"  method="GET" id="login_form">
+					<h1 class="heading1">CONTAXTS</h1>
+					<p>Keep track of contact information of people<br> in your circle eg phone numbers with this app</p>
+					<div class="line"></div>
+					<div><p >Login to access your account</p></div>
+					<div><p id="login_error" style="color:#f70e0e"></p></div>
+					<div><input type="text" class="input" id="email" placeholder="Email" autofocus="on" ></div>
+					<div><input type="password" class="input" id="password" placeholder="Password" ></div>
+					<div><input type="submit" class="submit_btn" onclick="loginUser();" id="loginbutton" value="Login"></div>
+					<div>
+						<div style="padding-top: 20px; padding-bottom: 20px;">
+							<a href="">Forgot password?</a> |
+							<a href="register.html">Sign up</a>
+						</div>
+					</div>
+		</form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/login.js"></script>
+
+</body>
+</html>
